@@ -1,0 +1,163 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Interpreter {
+	static String Code = "";
+	static Integer codeLength = 0;
+	static ArrayList<Integer> Data = new ArrayList<Integer>();
+	static Integer CodePointer = 0;
+	static Integer DataPointer = 0;
+	static Character CodeChar;
+
+	public static void main(String[] args) {
+		//get code
+		System.out.println("Please enter code as a single line:");
+		Scanner input = new Scanner(System.in);
+		Code = input.nextLine();
+		input.close();
+		//have code. continue
+		codeLength = Code.length();
+
+		
+		while(CodePointer < codeLength){//main loop
+			//TODO: interpret :o
+			CodeChar = Code.charAt(CodePointer);
+			switch(CodeChar){
+			case '>':
+				DataPointer++;
+				break;
+			case '<':
+				DataPointer--;
+				break;
+			case '+':
+				addition();
+				break;
+			case '-':
+				subtraction();
+				break;
+			case '.':
+				output();
+				break;
+			case ',':
+				input();
+				break;
+			case '[':
+				OpenLoop();
+				break;
+			case ']':
+				CloseLoop();
+				break;
+			default://brainfuck don't give a fuck
+				break;	
+			}
+			//done interpreting. go to next character.
+			CodePointer++;
+		}
+		System.out.println("Done. Exiting.");
+	}
+	
+	private static void addition(){
+		EnsureCapacity();
+		Data.set(DataPointer, Data.get(DataPointer)+1);
+	}
+	
+	private static void subtraction(){
+		EnsureCapacity();
+		Data.set(DataPointer, Data.get(DataPointer)-1);
+	}
+	
+	private static void output(){
+		EnsureCapacity();
+		System.out.print(Character.toChars((Data.get(DataPointer))));
+	}
+	
+	private static void input(){
+		EnsureCapacity();
+		System.out.print("$");
+		Scanner s= new Scanner(System.in);
+		Data.set(DataPointer, (int) s.next().charAt(0));
+		s.close();
+	}
+	
+	private static void OpenLoop(){
+		if(Data.get(DataPointer) != 0){
+			return;
+		}
+		else{
+			//find ending brace and jump past it
+			Integer SearchCharIndex = CodePointer+1;
+			Integer BracesToSkip = 0;
+			Character SearchChar;
+			while(true){
+				SearchChar = Code.charAt(SearchCharIndex);
+				switch(SearchChar){
+				case '[':
+					BracesToSkip++;
+					break;
+				case ']':
+					if(BracesToSkip == 0){
+						CodePointer = SearchCharIndex;
+						return;
+					}
+					else{
+						BracesToSkip--;
+					}
+					break;
+				default:
+					break;
+				}
+				SearchCharIndex++;
+				if(SearchCharIndex < codeLength)
+					continue;
+				else{
+					System.err.println("unmatched opening brace at char "+CodePointer);
+					return;//unmatched brace
+				}
+			}
+		}
+	}
+	
+	private static void CloseLoop(){
+		if(Data.get(DataPointer) != 0){
+			//TODO: search backwards to find opening brace and jump to it.
+			Integer SearchCharIndex = CodePointer-1;
+			Integer BracesToSkip = 0;
+			Character SearchChar;
+			while(true){
+				SearchChar = Code.charAt(SearchCharIndex);
+				switch(SearchChar){
+				case ']':
+					BracesToSkip++;
+					break;
+				case '[':
+					if(BracesToSkip == 0){
+						CodePointer = SearchCharIndex;
+						return;
+					}
+					else{
+						BracesToSkip--;
+					}
+					break;
+				default:
+					break;
+				}
+				SearchCharIndex--;
+				if(SearchCharIndex >= 0)
+					continue;
+				else{
+					System.err.println("unmatched closing brace at char "+CodePointer);
+					return;//unmatched brace
+				}
+			}
+		}
+	}
+	
+	private static void EnsureCapacity(){
+		Data.ensureCapacity(DataPointer+1);//this should speed up the program if I ever need to add a bunch of items onto the list at once. May want to test the speed of with vs without.
+		while(DataPointer >= Data.size()){
+			Data.add(0);
+		}//add 0s onto the list until we have enough to work on the one in question
+	}
+	
+
+}

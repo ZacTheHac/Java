@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+<libraryInfo home="C:\Autodesk\WI\Autodesk 3ds Max 2014\x64\DirectConnect\Autodesk Shared\DC\java\jre1.6.0_03" version="1.6.0_03">
+<bootpath>
+<entry path="C:\Autodesk\WI\Autodesk 3ds Max 2014\x64\DirectConnect\Autodesk Shared\DC\java\jre1.6.0_03\lib\resources.jar"/>
+<entry path="C:\Autodesk\WI\Autodesk 3ds Max 2014\x64\DirectConnect\Autodesk Shared\DC\java\jre1.6.0_03\lib\rt.jar"/>
+<entry path="C:\Autodesk\WI\Autodesk 3ds Max 2014\x64\DirectConnect\Autodesk Shared\DC\java\jre1.6.0_03\lib\sunrsasign.jar"/>
+<entry path="C:\Autodesk\WI\Autodesk 3ds Max 2014\x64\DirectConnect\Autodesk Shared\DC\java\jre1.6.0_03\lib\jsse.jar"/>
+<entry path="C:\Autodesk\WI\Autodesk 3ds Max 2014\x64\DirectConnect\Autodesk Shared\DC\java\jre1.6.0_03\lib\jce.jar"/>
+<entry path="C:\Autodesk\WI\Autodesk 3ds Max 2014\x64\DirectConnect\Autodesk Shared\DC\java\jre1.6.0_03\lib\charsets.jar"/>
+<entry path="C:\Autodesk\WI\Autodesk 3ds Max 2014\x64\DirectConnect\Autodesk Shared\DC\java\jre1.6.0_03\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Autodesk\WI\Autodesk 3ds Max 2014\x64\DirectConnect\Autodesk Shared\DC\java\jre1.6.0_03\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Autodesk\WI\Autodesk 3ds Max 2014\x64\DirectConnect\Autodesk Shared\DC\java\jre1.6.0_03\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files (x86)\Arduino\java" version="1.8.0_66">
+<bootpath>
+<entry path="C:\Program Files (x86)\Arduino\java\lib\resources.jar"/>
+<entry path="C:\Program Files (x86)\Arduino\java\lib\rt.jar"/>
+<entry path="C:\Program Files (x86)\Arduino\java\lib\sunrsasign.jar"/>
+<entry path="C:\Program Files (x86)\Arduino\java\lib\jsse.jar"/>
+<entry path="C:\Program Files (x86)\Arduino\java\lib\jce.jar"/>
+<entry path="C:\Program Files (x86)\Arduino\java\lib\charsets.jar"/>
+<entry path="C:\Program Files (x86)\Arduino\java\lib\jfr.jar"/>
+<entry path="C:\Program Files (x86)\Arduino\java\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files (x86)\Arduino\java\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files (x86)\Arduino\java\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files (x86)\Java\jre1.8.0_91" version="1.8.0_91">
+<bootpath>
+<entry path="C:\Program Files (x86)\Java\jre1.8.0_91\lib\resources.jar"/>
+<entry path="C:\Program Files (x86)\Java\jre1.8.0_91\lib\rt.jar"/>
+<entry path="C:\Program Files (x86)\Java\jre1.8.0_91\lib\sunrsasign.jar"/>
+<entry path="C:\Program Files (x86)\Java\jre1.8.0_91\lib\jsse.jar"/>
+<entry path="C:\Program Files (x86)\Java\jre1.8.0_91\lib\jce.jar"/>
+<entry path="C:\Program Files (x86)\Java\jre1.8.0_91\lib\charsets.jar"/>
+<entry path="C:\Program Files (x86)\Java\jre1.8.0_91\lib\jfr.jar"/>
+<entry path="C:\Program Files (x86)\Java\jre1.8.0_91\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files (x86)\Java\jre1.8.0_91\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files (x86)\Java\jre1.8.0_91\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files\Java\jre7" version="1.7.0_67">
+<bootpath>
+<entry path="C:\Program Files\Java\jre7\lib\resources.jar"/>
+<entry path="C:\Program Files\Java\jre7\lib\rt.jar"/>
+<entry path="C:\Program Files\Java\jre7\lib\sunrsasign.jar"/>
+<entry path="C:\Program Files\Java\jre7\lib\jsse.jar"/>
+<entry path="C:\Program Files\Java\jre7\lib\jce.jar"/>
+<entry path="C:\Program Files\Java\jre7\lib\charsets.jar"/>
+<entry path="C:\Program Files\Java\jre7\lib\jfr.jar"/>
+<entry path="C:\Program Files\Java\jre7\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files\Java\jre7\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files\Java\jre7\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files\Java\jre6" version="1.6.0_45">
+<bootpath>
+<entry path="C:\Program Files\Java\jre6\lib\resources.jar"/>
+<entry path="C:\Program Files\Java\jre6\lib\rt.jar"/>
+<entry path="C:\Program Files\Java\jre6\lib\sunrsasign.jar"/>
+<entry path="C:\Program Files\Java\jre6\lib\jsse.jar"/>
+<entry path="C:\Program Files\Java\jre6\lib\jce.jar"/>
+<entry path="C:\Program Files\Java\jre6\lib\charsets.jar"/>
+<entry path="C:\Program Files\Java\jre6\lib\modules\jdk.boot.jar"/>
+<entry path="C:\Program Files\Java\jre6\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files\Java\jre6\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files\Java\jre6\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="E:\ProgramFiles2-forSSD\Java\jre1.8.0_40" version="1.8.0_40">
+<bootpath>
+<entry path="E:\ProgramFiles2-forSSD\Java\jre1.8.0_40\lib\resources.jar"/>
+<entry path="E:\ProgramFiles2-forSSD\Java\jre1.8.0_40\lib\rt.jar"/>
+<entry path="E:\ProgramFiles2-forSSD\Java\jre1.8.0_40\lib\sunrsasign.jar"/>
+<entry path="E:\ProgramFiles2-forSSD\Java\jre1.8.0_40\lib\jsse.jar"/>
+<entry path="E:\ProgramFiles2-forSSD\Java\jre1.8.0_40\lib\jce.jar"/>
+<entry path="E:\ProgramFiles2-forSSD\Java\jre1.8.0_40\lib\charsets.jar"/>
+<entry path="E:\ProgramFiles2-forSSD\Java\jre1.8.0_40\lib\jfr.jar"/>
+<entry path="E:\ProgramFiles2-forSSD\Java\jre1.8.0_40\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="E:\ProgramFiles2-forSSD\Java\jre1.8.0_40\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="E:\ProgramFiles2-forSSD\Java\jre1.8.0_40\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="E:\ProgramFiles2-forSSD\Java\jre7" version="1.7.0_51">
+<bootpath>
+<entry path="E:\ProgramFiles2-forSSD\Java\jre7\lib\resources.jar"/>
+<entry path="E:\ProgramFiles2-forSSD\Java\jre7\lib\rt.jar"/>
+<entry path="E:\ProgramFiles2-forSSD\Java\jre7\lib\sunrsasign.jar"/>
+<entry path="E:\ProgramFiles2-forSSD\Java\jre7\lib\jsse.jar"/>
+<entry path="E:\ProgramFiles2-forSSD\Java\jre7\lib\jce.jar"/>
+<entry path="E:\ProgramFiles2-forSSD\Java\jre7\lib\charsets.jar"/>
+<entry path="E:\ProgramFiles2-forSSD\Java\jre7\lib\jfr.jar"/>
+<entry path="E:\ProgramFiles2-forSSD\Java\jre7\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="E:\ProgramFiles2-forSSD\Java\jre7\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="E:\ProgramFiles2-forSSD\Java\jre7\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files\Java\jre1.8.0_91" version="1.8.0_91">
+<bootpath>
+<entry path="C:\Program Files\Java\jre1.8.0_91\lib\resources.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_91\lib\rt.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_91\lib\sunrsasign.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_91\lib\jsse.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_91\lib\jce.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_91\lib\charsets.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_91\lib\jfr.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_91\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files\Java\jre1.8.0_91\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files\Java\jre1.8.0_91\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files\Java\jre1.8.0_73" version="1.8.0_73">
+<bootpath>
+<entry path="C:\Program Files\Java\jre1.8.0_73\lib\resources.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_73\lib\rt.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_73\lib\sunrsasign.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_73\lib\jsse.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_73\lib\jce.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_73\lib\charsets.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_73\lib\jfr.jar"/>
+<entry path="C:\Program Files\Java\jre1.8.0_73\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files\Java\jre1.8.0_73\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files\Java\jre1.8.0_73\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\Program Files\Common Files\Autodesk Shared\DirectConnect2014 (64-bit)\java\jre1.6.0_03" version="1.6.0_03">
+<bootpath>
+<entry path="C:\Program Files\Common Files\Autodesk Shared\DirectConnect2014 (64-bit)\java\jre1.6.0_03\lib\resources.jar"/>
+<entry path="C:\Program Files\Common Files\Autodesk Shared\DirectConnect2014 (64-bit)\java\jre1.6.0_03\lib\rt.jar"/>
+<entry path="C:\Program Files\Common Files\Autodesk Shared\DirectConnect2014 (64-bit)\java\jre1.6.0_03\lib\sunrsasign.jar"/>
+<entry path="C:\Program Files\Common Files\Autodesk Shared\DirectConnect2014 (64-bit)\java\jre1.6.0_03\lib\jsse.jar"/>
+<entry path="C:\Program Files\Common Files\Autodesk Shared\DirectConnect2014 (64-bit)\java\jre1.6.0_03\lib\jce.jar"/>
+<entry path="C:\Program Files\Common Files\Autodesk Shared\DirectConnect2014 (64-bit)\java\jre1.6.0_03\lib\charsets.jar"/>
+<entry path="C:\Program Files\Common Files\Autodesk Shared\DirectConnect2014 (64-bit)\java\jre1.6.0_03\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\Program Files\Common Files\Autodesk Shared\DirectConnect2014 (64-bit)\java\jre1.6.0_03\lib\ext"/>
+<entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\Program Files\Common Files\Autodesk Shared\DirectConnect2014 (64-bit)\java\jre1.6.0_03\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>

@@ -1,0 +1,131 @@
+
+public class MyCharacter {
+	/*Computer games often contain different characters or creatures. For example, you
+might design a game in which alien beings possess specific characteristics such as
+color, number of eyes, or number of lives. Design a character for a game, creating a
+class to hold at least three attributes for the character. Include methods to get and
+set each of the character’s attributes. Save the file as MyCharacter.java. Then
+write an application in which you create at least two characters. In turn, pass each
+character to a display method that displays the character’s attributes. Save the
+application as TwoCharacters.java.
+*/
+	String name;
+	short health;
+	short walkSpeed;
+	short runSpeed;
+	
+	MyCharacter(){
+		this.setName("Tim...");
+		this.setWalkSpeed((short) 50);
+		this.setRunSpeed((short) 250);//he may not walk very quickly, but that sprint will be legendary
+		this.setHealth((short) 100);
+	}
+	
+	MyCharacter(String Name, short Health, short WalkSpeed, short RunSpeed){
+		this.setName(Name);
+		this.setWalkSpeed(WalkSpeed);
+		this.setRunSpeed(RunSpeed);//he may not walk very quickly, but that sprint will be legendary
+		this.setHealth(Health);
+	}
+	
+	public void setName(String Name){
+		if(Name.length() <= 20 && Name.length() >= 0){
+			this.name = Name;
+		}
+		else{
+			throw new IndexOutOfBoundsException("Character's name must be between 1 and 20 characters long.");
+		}
+	}
+	
+	public String getName(){
+		return this.name;
+	}
+	
+	public void setWalkSpeed(short wS){
+		if(wS >=0 && wS <= 200){
+			this.walkSpeed=wS;
+		}
+		else{
+			throw new IndexOutOfBoundsException("Character's walk speed must be between 0 and 200, inclusive.");
+		}
+	}
+	
+	public short getWalkSpeed(){
+		return this.walkSpeed;
+	}
+	
+	public void setRunSpeed(short rS){
+		if(rS >=0 && rS <= 250){
+			this.runSpeed=rS;
+		}
+		else{
+			throw new IndexOutOfBoundsException("Character's run speed must be between 0 and 250, inclusive.");
+		}
+	}
+	
+	public short getRunSpeed(){
+		return this.runSpeed;
+	}
+	
+	public void setHealth(short Health){
+		if(Health >=0 && Health <= 100){
+			this.health=Health;
+		}
+		else{
+			throw new IndexOutOfBoundsException("Character's health must be between 0 and 100, inclusive.");
+		}
+	}
+	
+	public short getHealth(){
+		return this.health;
+	}
+	
+	public String toString(){
+		String message = "";
+		if(this.getName() == ""){
+			message = "This nameless character";
+		}
+		else{
+			message = this.getName();
+		}//get an apropriate name
+		
+		
+		if(this.getHealth() == 0){
+			message +=" is dead, could";
+		}
+		else{
+			message +=" has " + this.getHealth() + " HP, can";
+		}//get their health, and concatenate it
+		
+		
+		if(this.getWalkSpeed()==0){
+			message += " not walk, and";
+		}
+		else{
+			message += " walk up to " + this.getWalkSpeed() + " units/sec, and";
+		}//get their walkspeed
+		
+		
+		if(this.getRunSpeed()==0){
+			if(this.getHealth() == 0){
+				message += " couldn't run.";
+			}
+			else{
+				message += " cannot run.";
+			}
+		}
+		else{
+			if(this.getHealth() == 0){
+				message+= " ran up to " + this.getRunSpeed() + " units/sec."; //use past-tense
+			}
+			else{
+				message+= " run up to " + this.getRunSpeed() + " units/sec.";
+			}
+		}//get their run speed
+		
+		return message;
+		//return this.getName() + " has " + this.getHealth() + " HP, and can walk up to " + this.getWalkSpeed() + " units/sec, and run up to " + this.getRunSpeed() + " units/sec.";
+	}
+	
+
+}

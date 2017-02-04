@@ -1,0 +1,63 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Interpreter {
+
+	public static void main(String[] args) {
+		String Code = "";
+		//get code
+		System.out.println("Please enter code as a single line:");
+		Scanner input = new Scanner(System.in);
+		Code = input.nextLine();
+		input.close();
+		//have code. continue
+		Integer codeLength = Code.length();
+		Integer CodePointer = 0;
+		Integer DataPointer = 0;
+		Character CodeChar;
+		ArrayList<Integer> Array = new ArrayList<Integer>();
+		
+		while(true){//main loop
+			if(CodePointer >= codeLength)
+				break;
+			//TODO: interpret :o
+			CodeChar = Code.charAt(CodePointer);
+			switch(CodeChar){
+			case '>':
+				DataPointer++;
+				break;
+			case '<':
+				DataPointer--;
+				break;
+			case '+':
+				
+				break;
+			case '-':
+				break;
+			case '.':
+				break;
+			case ',':
+				break;
+			case '[':
+				break;
+			case ']':
+				break;
+			default://brainfuck don't give a fuck
+				break;
+				
+			}
+			
+			
+			//done interpreting. go to next character.
+			CodePointer++;
+		}
+		
+
+	}
+	
+	private static void addition(){
+		
+	}
+	
+
+}

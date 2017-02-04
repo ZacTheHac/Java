@@ -1,0 +1,72 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Interpreter {
+	static String Code = "";
+	static Integer codeLength = 0;
+	static ArrayList<Integer> Data = new ArrayList<Integer>();
+	static Integer CodePointer = 0;
+	static Integer DataPointer = 0;
+	static Character CodeChar;
+
+	public static void main(String[] args) {
+		//get code
+		System.out.println("Please enter code as a single line:");
+		Scanner input = new Scanner(System.in);
+		Code = input.nextLine();
+		input.close();
+		//have code. continue
+		codeLength = Code.length();
+
+		
+		while(true){//main loop
+			if(CodePointer >= codeLength)
+				break;
+			//TODO: interpret :o
+			CodeChar = Code.charAt(CodePointer);
+			switch(CodeChar){
+			case '>':
+				DataPointer++;
+				break;
+			case '<':
+				DataPointer--;
+				break;
+			case '+':
+				
+				break;
+			case '-':
+				break;
+			case '.':
+				break;
+			case ',':
+				break;
+			case '[':
+				break;
+			case ']':
+				break;
+			default://brainfuck don't give a fuck
+				break;
+				
+			}
+			
+			
+			//done interpreting. go to next character.
+			CodePointer++;
+		}
+		
+
+	}
+	
+	private static void addition(){
+		/*while(DataPointer >= Data.size()){
+			Data.add(0);
+		}//add 0s onto the list until we have enough to work on the one in question */
+		//or just use the built-in assigner
+		Data.ensureCapacity(DataPointer-1);
+		Data.
+			
+		
+	}
+	
+
+}

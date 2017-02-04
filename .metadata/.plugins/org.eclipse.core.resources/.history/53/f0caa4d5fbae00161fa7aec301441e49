@@ -1,0 +1,11 @@
+import java.util.ArrayList;
+
+public class Interpreter {
+
+	public static void main(String[] args) {
+		String Code = "";
+		ArrayList<Integer> Array = new ArrayList<Integer>();
+
+	}
+
+}
