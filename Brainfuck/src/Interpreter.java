@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 import javax.swing.JFileChooser;
 
+@SuppressWarnings("unused")//because I moved everything inline, a lot of the functions are unneeded now. But I still want them for reference.
 public class Interpreter {
 	static String Code = "";
 	static Integer codeLength = 0;
@@ -47,7 +48,7 @@ public class Interpreter {
 		long StartTime = System.currentTimeMillis();
 		while(CodePointer < codeLength){//main loop
 			EnsureCapacity();
-			//TODO: interpret :o
+			//now to interpret
 			CodeChar = Code.charAt(CodePointer);
 			if(Debug){
 				OutputArray();
