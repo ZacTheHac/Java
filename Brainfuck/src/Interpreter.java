@@ -79,7 +79,7 @@ public class Interpreter {
 				break;
 			case ',':
 				System.out.print("$");
-				Data.set(DataPointer, (int) input.next().charAt(0));
+				Data.set(DataPointer, Integer.parseInt(input.next()));//.charAt(0)
 				break;
 			case '[':
 				OpenLoop();
