@@ -17,9 +17,9 @@ public class PNGConvert {
 		int[] pixels = null;
 
 		JFileChooser fileChooser = new JFileChooser(); //start setting up a file dialog
-		FileNameExtensionFilter filter = new FileNameExtensionFilter("PNG Images", "png", "png");//set up a filter that only allows png (I left "ping" in to show myself how it works)
+		FileNameExtensionFilter filter = new FileNameExtensionFilter("PNG Images", "png", "png");//set up a filter that only allows png (I left the 2nd "png" in to show myself how it works)
 		fileChooser.setFileFilter(filter);//file dialog uses filter
-		fileChooser.setCurrentDirectory(new File(System.getProperty("user.home") + "/Desktop/eyes"));//go to the folder I'll want to be in
+		fileChooser.setCurrentDirectory(new File(System.getProperty("user.home") + "/Desktop"));//go to the folder I'll want to be in
 		int result = fileChooser.showOpenDialog(fileChooser);
 		//open the file chooser to the desktop and record if they picked a file or hit cancel
 
@@ -72,7 +72,7 @@ public class PNGConvert {
 	}
 	
 	public static String ConvertToCode(int[][][] Picture, String name){
-		final int MaxColors = 10;
+		final int MaxColors = 30;
 		String code = "";
 		int[] black = {0,0,0};
 		int width = Picture.length;
@@ -151,7 +151,7 @@ public class PNGConvert {
 		}
 		
 		originalStorageCost = width*height*4;
-		finalStorageCost = (NumberOfColors*4)+totalRecordedPositions;
+		finalStorageCost = (NumberOfColors*4)+totalRecordedPositions+1;
 		System.out.println("After Optimization, only "+finalStorageCost+" numbers are stored, vs the "+originalStorageCost+" it originally took. That's "+(((float)finalStorageCost/originalStorageCost)*100)+"%!");
 		System.out.println(NumberOfColors+" unique colors.");
 		System.out.println(totalRecordedPositions+" recorded pixels, vs "+width*height+" originally.");
@@ -170,6 +170,8 @@ public class PNGConvert {
 		int codeNumbersIndex = 0;
 		
 		code ="const uint8_t "+name+"["+finalStorageCost+"] = {";
+		code += finalStorageCost;
+		code += ",";
 		for(int c = 0; c < NumberOfColors; c++){//heh, c++... this holds what color we're working on currently
 			code += OptimizedColors[c][0];
 			codeNumbers[codeNumbersIndex++] = OptimizedColors[c][0];
